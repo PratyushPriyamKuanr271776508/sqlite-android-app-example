@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell_pc.sqliteactivity.SQLiteActivity">
+
+    <Button
+        android:id="@+id/createDBbutton"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:text="CreateDatabase"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="createDatabase"/>
+
+    <Button
+        android:id="@+id/addContacts"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:text="addconatcts"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="addContacts"
+        android:clickable="false"/>
+
+    <Button
+        android:id="@+id/deleteContacts"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="DeleteContacts"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="102dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="deleteConatcts"
+        android:clickable="false"/>
+
+    <Button
+        android:id="@+id/getContacts"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:text="GetContact"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="102dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="getContacts"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Name"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="183dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="251dp"
+        tools:ignore="MissingConstraints"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/id_del"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="ID to delete"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="327dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/deleteDB"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:text="DeleteDatabase"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="399dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="deleteDatabase"/>
+
+</LinearLayout>
